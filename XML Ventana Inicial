@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".primer_gran_terror.FirstHorrorActivity">
+
+
+
+    <TextView
+        android:id="@+id/bienvenido"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:text="@string/bienvenido"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/user"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/escribe_tu_user"
+        android:singleLine="true"
+        android:maxLines="1"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:autofillHints=""
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/escribe_tu_password"
+        android:singleLine="true"
+        android:maxLines="1"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:autofillHints=""
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="@string/iniciar_sesion"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
+    <Button
+        android:id="@+id/btnLoginWithoutPassword"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="@string/ingresar_como_invitado"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:text="@string/version_1_0_tinky_winky"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
